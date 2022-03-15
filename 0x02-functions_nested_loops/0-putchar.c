@@ -8,10 +8,10 @@
  * Return: 0 (Success)
  */
 
-init main(void)
+int main(void)
 {
 	char text[9] = "_putchar";
-	init i = 0;
+	int i = 0;
 
 	for (i = 0; i < 8; i++)
 	{
