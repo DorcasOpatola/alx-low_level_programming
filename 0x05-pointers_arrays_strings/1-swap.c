@@ -1,20 +1,18 @@
-#include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    int a;
-    int b;
+* swap_int - swaps the values of two integers
+* @a: value one to swap
+* @b: value two to swap
+* Return: Nothing
+*/
+#include <stdio.h>
+#include "main.h"
 
-    a = 55;
-    b = 26;
-    printf("a=%d, b=%d\n", a, b);
-    swap_int(&a, &b);
-    printf("a=%d, b=%d\n", a, b);
-    return (0);
+void swap_int(int *a, int *b)
+{
+int aux;
+
+aux = *a;
+*a = *b;
+*b = aux;
+
 }
