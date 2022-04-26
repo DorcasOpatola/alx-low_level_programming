@@ -12,7 +12,7 @@
 typedef struct listint_s
 {
 	int n;
-	struct (listint_s *next);
+	struct listint_s *next;
 } listint_t;
 
 /**
@@ -25,7 +25,7 @@ typedef struct listint_s
 typedef struct listp_s
 {
 	void *p;
-	struct (listp_s *next);
+	struct listp_s *next;
 } listp_t;
 
 size_t print_listint(const listint_t *h);
